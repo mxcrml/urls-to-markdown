@@ -1,0 +1,146 @@
+/* Body Styles */
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+/* Container Styles */
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+body.dark-mode .container {
+  background-color: #2b2b2b;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Title */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: filter 0.3s ease;
+}
+
+button.toggle-mode {
+  background-color: #ffcc00;
+  color: #000000;
+}
+
+body.dark-mode button.toggle-mode {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #2364a9;
+  box-shadow: 0 0 5px rgba(35, 100, 169, 0.5);
+}
+
+body.dark-mode textarea {
+  background-color: #333333;
+  color: #f5f5f5;
+  border-color: #555555;
+}
+
+/* Convert Button */
+#convert-btn {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #2364a9;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#convert-btn:hover {
+  background-color: #1a4f86;
+}
+
+body.dark-mode #convert-btn {
+  background-color: #555555;
+}
+
+body.dark-mode #convert-btn:hover {
+  background-color: #444444;
+}
+
+/* Status Message */
+#status {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer a {
+  color: #2364a9;
+  text-decoration: none;
+}
+
+body.dark-mode .footer a {
+  color: #ffcc00;
+}
+
+/* Toggle emojis */
+button.toggle-mode::before {
+  content: "🌑";
+}
+
+body.dark-mode button.toggle-mode::before {
+  content: "☀️";
+}
