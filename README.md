@@ -8,6 +8,8 @@ This is a lightweight yet powerful tool designed to convert a list of URLs into 
 
 This tool allows you to input multiple URLs, process their content in batches, and download a single `.txt` file containing the extracted Markdown for all the URLs.
 
+<img width="100%" alt="urls-to-markdown-preview" src="https://github.com/user-attachments/assets/fc88bdf4-4bee-499a-8ef5-6dadb4548b35">
+
 ---
 
 ## Features
