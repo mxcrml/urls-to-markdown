@@ -1,6 +1,6 @@
 # URLs to Markdown
 
-This is a lightweight yet powerful tool designed to convert a list of URLs into Markdown format and generate AI-powered summaries. Powered by [macsplit/urltomarkdown](https://github.com/macsplit/urltomarkdown) and OpenAI's GPT-4, it simplifies the process of extracting and summarizing content from web pages, making it an ideal utility for SEO professionals, content writers, and web developers.
+This is a lightweight yet powerful tool designed to convert a list of URLs into Markdown format and generate AI-powered summaries. Powered by [macsplit/urltomarkdown](https://github.com/macsplit/urltomarkdown) and OpenAI's GPT-4o-mini, it simplifies the process of extracting and summarizing content from web pages, making it an ideal utility for SEO professionals, content writers, and web developers.
 
 ---
 
