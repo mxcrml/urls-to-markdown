@@ -8,7 +8,7 @@ This is a lightweight yet powerful tool designed to convert a list of URLs into 
 
 This tool allows you to input multiple URLs, process their content in batches, and view or download the extracted Markdown content. With an OpenAI API key, you can also generate concise summaries of the content.
 
-<img width="100%" alt="urls-to-markdown-preview" src="[https://github.com/user-attachments/assets/fc88bdf4-4bee-499a-8ef5-6dadb4548b35">
+<img width="100%" alt="urls-to-markdown-preview" src="https://github.com/user-attachments/assets/fc88bdf4-4bee-499a-8ef5-6dadb4548b35">
 
 ---
 
