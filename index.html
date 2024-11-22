@@ -9,17 +9,86 @@
 </head>
 <body>
   <div class="container">
-    <h1>URLs to Markdown</h1>
+    <div class="title-section">
+      <h1>URLs to Markdown</h1>
+      <p class="subtitle">✨ Boosted with AI-powered summaries</p>
+    </div>
     <div class="buttons">
       <button class="toggle-mode" onclick="toggleMode()"></button>
     </div>
-    <textarea id="url-input" placeholder="Paste URLs here, one per line"></textarea>
-    <button id="convert-btn">Convert to Markdown</button>
-    <p id="status"></p>
+    
+    <!-- Input Section -->
+    <div class="input-section">
+      <div id="api-key-section" class="api-key-section">
+        <div class="api-key-header">
+          <div class="header-with-info">
+            <h3>OpenAI API Key (Optional)</h3>
+            <div class="info-bubble" role="tooltip">
+              <span class="info-icon">ⓘ</span>
+              <div class="info-tooltip">
+                <h4>About OpenAI API</h4>
+                <p>This tool uses GPT-4o-mini to generate summaries, one of the most powerful and cheapest models available. To use this feature, you need an OpenAI API key.</p>
+                <ul>
+                  <li><a href="https://platform.openai.com/docs/quickstart" target="_blank" rel="noopener">How to get an API key →</a></li>
+                  <li><a href="https://openai.com/api/pricing" target="_blank" rel="noopener">View API pricing →</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="api-key-explanation">Add your OpenAI API key to unlock the AI-powered summary feature. The basic URL to Markdown conversion works without an API key.</p>
+        </div>
+        <div class="api-key-input-group">
+          <input type="password" id="api-key-input" class="loading" placeholder="Paste your OpenAI API key here">
+          <button id="validate-key-btn">Validate</button>
+          <button id="remove-key-btn" style="display: none;">Remove Key</button>
+          <span id="api-key-status"></span>
+        </div>
+      </div>
+      
+      <textarea id="url-input" placeholder="Paste URLs here, one per line"></textarea>
+      
+      <div class="action-buttons">
+        <button id="convert-btn" class="main-btn">Convert to Markdown</button>
+        <button id="summary-btn" class="main-btn inactive">Generate AI Summary</button>
+      </div>
+      
+      <div class="status-container">
+        <p id="status"></p>
+      </div>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-section">
+      <div class="output-column">
+        <div id="markdown-container" style="display: none;">
+          <div class="content-header">
+            <h2>Markdown Output</h2>
+            <div class="content-actions">
+              <button id="download-markdown-btn" class="action-btn" title="Download Markdown">💾</button>
+              <button id="copy-markdown-btn" class="action-btn" title="Copy to Clipboard">📋</button>
+            </div>
+          </div>
+          <div id="markdown-content" class="content-box"></div>
+        </div>
+      </div>
+      
+      <div class="output-column">
+        <div id="summary-container" style="display: none;">
+          <div class="content-header">
+            <h2>Summary</h2>
+            <div class="content-actions">
+              <button id="download-summary-btn" class="action-btn" title="Download Summary">💾</button>
+              <button id="copy-summary-btn" class="action-btn" title="Copy to Clipboard">📋</button>
+            </div>
+          </div>
+          <div id="summary-content" class="content-box"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="footer">
     <p>
-      <a href="https://github.com/mxcrml/urls-to-markdown" target="_blank">Version 1.0</a> – Powered by 
+      <a href="https://github.com/mxcrml/urls-to-markdown" target="_blank">Version 2.0</a> – Powered by 
       <a href="https://github.com/macsplit/urltomarkdown" target="_blank">macsplit/urltomarkdown</a> – Made with ❤️ by <a href="https://astralrank.com" target="_blank">Astralrank</a>
     </p>
   </div>

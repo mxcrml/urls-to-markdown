@@ -1,12 +1,12 @@
 # URLs to Markdown
 
-This is a lightweight yet powerful tool designed to convert a list of URLs into Markdown format. Powered by [macsplit/urltomarkdown](https://github.com/macsplit/urltomarkdown), it simplifies the process of extracting Markdown content from web pages, making it an ideal utility for SEO professionals, content writers, and web developers.
+This is a lightweight yet powerful tool designed to convert a list of URLs into Markdown format and generate AI-powered summaries. Powered by [macsplit/urltomarkdown](https://github.com/macsplit/urltomarkdown) and OpenAI's GPT-4, it simplifies the process of extracting and summarizing content from web pages, making it an ideal utility for SEO professionals, content writers, and web developers.
 
 ---
 
 ## Preview
 
-This tool allows you to input multiple URLs, process their content in batches, and download a single `.txt` file containing the extracted Markdown for all the URLs.
+This tool allows you to input multiple URLs, process their content in batches, and view or download the extracted Markdown content. With an OpenAI API key, you can also generate concise summaries of the content.
 
 <img width="100%" alt="urls-to-markdown-preview" src="https://github.com/user-attachments/assets/fc88bdf4-4bee-499a-8ef5-6dadb4548b35">
 
@@ -15,9 +15,10 @@ This tool allows you to input multiple URLs, process their content in batches, a
 ## Features
 
 - **Batch Processing**: Processes multiple URLs simultaneously, with built-in retry logic for failed requests.
+- **AI-Powered Summaries**: Generate concise summaries of your content using OpenAI's GPT-4 (requires API key).
+- **Interactive UI**: View Markdown content and summaries directly in the interface with copy and download options.
 - **Retry on Failure**: Automatically retries failed URL fetches up to 3 times with customizable delays.
 - **Throttling**: Prevents API overload by introducing a delay between batches.
-- **Downloadable Markdown File**: Generates a single `.txt` file containing Markdown content for all provided URLs. Extremely useful to quickly build a knowledge base.
 - **Dark/Light Mode Toggle**: Switch between light and dark themes for a more comfortable user experience.
 
 ---
@@ -44,15 +45,23 @@ Simply open the `index.html` file in any modern browser to start using the tool.
 1. **Enter URLs**:
    - Paste a list of URLs into the text area, one URL per line.
    
-2. **Convert to Markdown**:
+2. **Optional: Add OpenAI API Key**:
+   - To use the AI summary feature, add your OpenAI API key.
+   - The key is stored locally and can be removed at any time.
+   - [Get an API key](https://platform.openai.com/docs/quickstart)
+   - [View API pricing](https://openai.com/api/pricing/)
+
+3. **Convert to Markdown**:
    - Click the "Convert to Markdown" button to start the process.
-   - The tool will process each URL and download the extracted content as a `.txt` file.
+   - View the extracted content directly in the interface.
+   - Use the copy or download buttons to save the content.
 
-3. **Dark/Light Mode**:
+4. **Generate Summary (Optional)**:
+   - With a valid API key, click "Generate Summary" to create an AI-powered summary.
+   - View, copy, or download the generated summary.
+
+5. **Dark/Light Mode**:
    - Use the toggle button (🌑/☀️) to switch between dark and light modes dynamically.
-
-4. **Retry on Failure**:
-   - If a URL fetch fails, the tool will retry up to 3 times with a delay of 10 seconds between attempts.
 
 ---
 
@@ -60,7 +69,7 @@ Simply open the `index.html` file in any modern browser to start using the tool.
 
 - **`index.html`**: The main HTML file for the user interface.
 - **`style.css`**: Handles the styling for both light and dark modes, as well as the overall layout.
-- **`script.js`**: Contains the core functionality, including batch processing, retry logic, file generation, and theme toggling.
+- **`script.js`**: Contains the core functionality, including batch processing, AI integration, and theme toggling.
 
 ---
 
@@ -69,6 +78,7 @@ Simply open the `index.html` file in any modern browser to start using the tool.
 - **HTML5/CSS3**: For the structure and styling of the tool.
 - **JavaScript (ES6)**: For handling the API calls, retries, batching, and dynamic behavior.
 - **[macsplit/urltomarkdown](https://github.com/macsplit/urltomarkdown)**: The API powering the Markdown conversion.
+- **OpenAI API**: Powers the AI summary generation feature.
 
 ---
 
@@ -80,7 +90,7 @@ This project is licensed under the CC-BY-4.0 License. See the [LICENSE](LICENSE.
 
 ## About
 
-This tool was developed as a practical solution for extracting Markdown content from web pages in bulk. It was created with inspiration from other tools built by [Astralrank](https://astralrank.com).
+This tool was developed as a practical solution for extracting and summarizing content from web pages in bulk. It was created with inspiration from other tools built by [Astralrank](https://astralrank.com).
 
 ---
 
