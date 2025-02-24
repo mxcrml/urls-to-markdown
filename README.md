@@ -77,7 +77,7 @@ Simply open the `index.html` file in any modern browser to start using the tool.
 
 - **HTML5/CSS3**: For the structure and styling of the tool.
 - **JavaScript (ES6)**: For handling the API calls, retries, batching, and dynamic behavior.
-- **[macsplit/urltomarkdown](https://github.com/macsplit/urltomarkdown)**: The API powering the Markdown conversion.
+- **[macsplit/urltomarkdown](https://github.com/macsplit/urltomarkdown)**: The API powering the Markdown conversion (self-hosted).
 - **OpenAI API**: Powers the AI summary generation feature.
 
 ---
