@@ -249,7 +249,7 @@ async function handleUrlConversion() {
     const fetchWithRetry = async (url, retries = 3) => {
       for (let attempt = 1; attempt <= retries; attempt++) {
         try {
-          const response = await fetch(`https://urltomarkdown.herokuapp.com/?url=${encodeURIComponent(url)}`);
+          const response = await fetch(`https://urltomarkdown-api.fly.dev/?url=${encodeURIComponent(url)}`);
           if (!response.ok) throw new Error(`Error for ${url}`);
           const markdown = await response.text();
           return `# ${url}\n\n${markdown}`;
